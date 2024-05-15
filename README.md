@@ -171,10 +171,10 @@ A sample chain.json includes the following information.
 
 ## Asset Lists
 Asset Lists are inspired by the Token Lists project on Ethereum which helps discoverability of ERC-20 tokens by providing a mapping between ERC-20 contract addresses and their associated metadata.
-Asset lists are a similar mechanism to allow frontends and other UIs to fetch metadata associated with Cosmos SDK denoms, especially for assets sent over IBC.
+Asset lists are a similar mechanism to allow frontends and other UIs, to fetch metadata associated with Cosmos SDK denoms, especially for assets sent over IBC.
 This standard is a work in progress. You'll notice that the format of assets in the ```assetlist.json``` structure is a strict superset json representation of the banktypes.DenomMetadata from the Cosmos SDK. This is purposefully done so that this standard may eventually be migrated into a Cosmos SDK module in the future, so it can be easily maintained on chain instead of on Github.
 An example assetlist json contains the following structure:
-```json
+```json.
 {
   "$schema": "../../assetlist.schema.json",
   "chain_name": "initia",
